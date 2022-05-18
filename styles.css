@@ -94,17 +94,25 @@ header {
   overflow: hidden;
   padding: 0.2in var(--dim-page-padding);
   position: relative;
-  text-shadow: 0 0 0.2em var(--col-primary);
+  text-shadow: 0 0 0.2em var(--col-primary), 0 0 0.2em var(--col-primary), 0 0 0.2em var(--col-primary), 0 0 0.2em var(--col-primary);
 }
 
-header::after {
+header>* {
+  position: relative;
+  z-index: 1;
+}
+
+header::before {
   background: url("hex.svg");
   content: " ";
   height: 1000%;
+  left: -50%;
   pointer-events: none;
   position: absolute;
+  top: -50%;
   transform: translate(-50%, -50%) rotate(-12deg);
   width: 1000%;
+  z-index: 0;
 }
 
 header a,
@@ -254,6 +262,10 @@ svg {
 @media print {
   body {
     padding: 0 !important;
+
+    --col-primary: #000;
+    --col-text: #000;
+    --col-text-contrast: #fff;
   }
 
   body,

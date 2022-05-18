@@ -205,8 +205,35 @@ svg {
 }
 
 @media screen and (max-width: 8.5in) {
+  body {
+    --dim-page-padding: 0.2in;
+  }
+
+  h2 {
+    display: block;
+  }
+
   header {
     display: block;
+  }
+
+  .buzzwords {
+    float: none;
+    border-left: none;
+    margin-left: 0;
+  }
+
+  .buzzwords li {
+    padding-left: 0;
+  }
+
+  .buzzwords li.buzzwords-header {
+    margin-left: calc(var(--dim-page-padding) * -1);
+    padding-left: var(--dim-page-padding);
+  }
+
+  .buzzwords li.buzzwords-header h2 {
+    display: inline;
   }
 
   .contact {
@@ -239,6 +266,11 @@ svg {
 
   .page {
     box-shadow: none;
+  }
+
+  header {
+    background-color: #fff;
+    color: #000;
   }
 
   h1,

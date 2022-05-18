@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>William M Martin III</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro|Titillium+Web" rel="stylesheet">
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    body {
+      background-color: #444;
+      box-sizing: border-box;
+      color: #000;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 11pt;
+      height: 100%;
+      width: 100%;
+    }
+
+    a,
+    a:active,
+    a:hover,
+    a:visited {
+      color: #006891;
+      text-decoration: none;
+    }
+
+    h1 {
+      border-bottom: 0.05in solid #006891;
+      display: inline;
+    }
+
+    h1,
+    h2 {
+      /* font-family: 'Titillium Web', sans-serif; */
+      font-family: sans-serif;
+      margin: 0.2em 0 0.5em;
+    }
+
+    h2 {
+      color: #006891;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: bold;
+      /* font-family: 'Raleway', sans-serif; */
+      font-family: sans-serif;
+      margin: 1em 0 0.5em;
+    }
+
+    h3 {
+      margin-top: 1em;
+      grid-column-end: span 2;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+    }
+
+    header h1 {
+      flex: 1;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    section {
+      padding: 0 0.5em;
+    }
+
+    sup {
+      word-break: keep-all;
+      white-space: nowrap;
+    }
+
+    .contact {
+      font-size: 10pt;
+      margin: 0;
+      padding-left: 3em;
+    }
+
+    .contact li {
+      list-style: none;
+      padding: 0.2em 0;
+    }
+
+    a.always-emphasis,
+    a.always-emphasis:active,
+    a.always-emphasis:hover,
+    a.always-emphasis:visited {
+      color: #006891;
+    }
+
+    .buzzwords {
+      border-left: 0.03in solid #006891;
+      float: right;
+      /* font-family: 'Titillium Web', sans-serif; */
+      font-family: sans-serif;
+      font-size: 10pt;
+      font-weight: bold;
+      list-style: none;
+      margin: 0 0 1em 1em;
+      padding: 0 0 0 1em;
+    }
+
+    .grid {
+      display: grid;
+      column-count: 2;
+    }
+
+    .icon {
+      height: 14pt;
+      padding-right: 0.5em;
+      vertical-align: middle;
+    }
+
+    .page {
+      background-color: #fff;
+      box-shadow: 0 0 0.25in #000;
+      box-sizing: border-box;
+      height: 11in;
+      max-width: 8.5in;
+      margin: 1in auto;
+      overflow: hidden;
+      padding: 0.5in;
+      page-break-after: always;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 8.5in) {
+      header {
+        display: block;
+      }
+
+      .contact {
+        margin: 1em 0;
+        padding: 0;
+      }
+
+      .page {
+        box-shadow: none;
+        height: unset;
+        margin: 0;
+        max-height: unset;
+        border-bottom: 2px solid #444;
+      }
+    }
+
+    @media print {
+      body {
+        padding: 0 !important;
+      }
+
+      body,
+      .page {
+        font-family: sans-serif;
+        height: 100% !important;
+        margin: 0 !important;
+        position: relative !important;
+        width: 100% !important;
+      }
+
+      .page {
+        box-shadow: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .buzzwords {
+        font-family: 'sans-serif';
+      }
+
+      a,
+      a:active,
+      a:hover,
+      a:visited {
+        color: #000;
+      }
+    }
+
+    @page {
+      margin: 0 !important;
+    }
+  </style>
+  <base target="_blank" />
+</head>
+
+<body>
+  <svg style="display: none" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <defs>
+      <g id="email-icon">
+        <path d="M20 2C20 0.9 19.1 0 18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2ZM18 2L10 7L2 2H18ZM18 14H2V4L10 9L18 4V14Z"
+          transform="translate(2 4)" />
+      </g>
+      <g id="phone-icon">
+        <path d="M3.54 2C3.6 2.89 3.75 3.76 3.99 4.59L2.79 5.79C2.38 4.59 2.12 3.32 2.03 2H3.54ZM13.4 14.02C14.25 14.26 15.12 14.41 16 14.47V15.96C14.68 15.87 13.41 15.61 12.2 15.21L13.4 14.02ZM4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.51C18 12.96 17.55 12.51 17 12.51C15.76 12.51 14.55 12.31 13.43 11.94C13.33 11.9 13.22 11.89 13.12 11.89C12.86 11.89 12.61 11.99 12.41 12.18L10.21 14.38C7.38 12.93 5.06 10.62 3.62 7.79L5.82 5.59C6.1 5.31 6.18 4.92 6.07 4.57C5.7 3.45 5.5 2.25 5.5 1C5.5 0.45 5.05 0 4.5 0Z"
+          transform="translate(3 3)" />
+      </g>
+      <g id="linkedin-icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 5.46C1 2.45 3.5 0 6.6 0h64.57c3.09 0 5.6 2.45 5.6 5.46V70.8c0 3.01-2.51 5.46-5.6 5.46H6.6c-3.1 0-5.6-2.45-5.6-5.46V5.46zM23.97 29.4v34.43H12.52V29.4h11.45zm.75-10.65c0 3.3-2.48 5.95-6.47 5.95h-.08c-3.84 0-6.32-2.65-6.32-5.95 0-3.38 2.56-5.95 6.47-5.95 3.92 0 6.33 2.57 6.4 5.95zm17.02 45.08H30.3s.15-31.2 0-34.43h11.44v4.87c1.52-2.34 4.25-5.68 10.32-5.68 7.53 0 13.17 4.92 13.17 15.5v19.74H53.8V45.4c0-4.63-1.66-7.79-5.8-7.79-3.16 0-5.04 2.13-5.87 4.19-.3.73-.38 1.76-.38 2.79v19.23z" />
+      </g>
+      <g id="github-icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+          transform="scale(64)" />
+      </g>
+    </defs>
+  </svg>
+  <div class="page">
+    <header>
+      <h1>William M Martin III</h1>
+      <ul class="contact">
+        <li>
+          <a href="https://www.linkedin.com/in/williammartin3rd/" class="always-emphasis">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77 77">
+              <use href="#linkedin-icon" fill="currentColor" />
+            </svg>
+            https://www.linkedin.com/in/williammartin3rd/
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/wmmiii" class="always-emphasis">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+              <use href="#github-icon" fill="currentColor" />
+            </svg>
+            https://github.com/wmmiii
+          </a>
+        </li>
+      </ul>
+    </header>
+    <h2>Work Experience</h2>
+
+    <ul class="buzzwords">
+      <li>AWS<li>
+      <li>Arduino</li>
+      <li>Bazel</li>
+      <li>C++</li>
+      <li>Embedded Linux<li>
+      <li>Emscripten</li>
+      <li>Express.js</li>
+      <li>GCP</li>
+      <li>GL</li>
+      <li>Grunt.js</li>
+      <li>Hibernate</li>
+      <li>JAX-RS</li>
+      <li>JUnit</li>
+      <li>Java</li>
+      <li>JavaScript</li>
+      <li>Jersey</li>
+      <li>Karma</li>
+      <li>Linux</li>
+      <li>Memcached</li>
+      <li>Mocha</li>
+      <li>MySQL</li>
+      <li>NPM</li>
+      <li>Node.js</li>
+      <li>Python</li>
+      <li>REST</li>
+      <li>Raspberry Pi</li>
+      <li>Rust</li>
+      <li>Sass</li>
+      <li>Solr</li>
+      <li>Spring</li>
+      <li>TypeScript</li>
+      <li>Vulkan</li>
+      <li>Webpack</li>
+      <li>glTF</li>
+    </ul>
+
+    <h3>
+      SketchUp (Trimble Inc.), Boulder, CO
+      <sup>Oct '15 &mdash; Present</sup>
+    </h3>
+    <section>
+      <h4>
+        Front-End Software Engineer <sub>Team Lead</sub>
+        (<a href="https://app.sketchup.com/app">SketchUp Web</a>)
+        <sup>Feb '17 &mdash; Present</sup>
+      </h4>
+      <p>
+        Developed features for SketchUp Web: SketchUp&apos;s web-native
+        modeling engine. Set up testing frameworks that integrated with build
+        systems to ensure code quality. Updated build process to use
+        mainstream build systems and Bamboo build services. Worked closely
+        with UX designers and project managers to create a web-native modeling
+        experience. Integrated Google and Microsoft services for SketchUp&apos;s
+        K-12 educational offering. Help onboard new engineers and mentor junior
+        engineers. Just, ya know, helped out the team a whole bunch!
+      </p>
+    </section>
+    <section>
+      <h4>Back-End Software Engineer (<a href="https://3dwarehouse.sketchup.com/">3D Warehouse</a>) <sup>Oct '15
+          &mdash; Feb '17</sup></h4>
+      <p>
+        Implemented and maintained back-end features of 3D Warehouse, which stores
+        over three million public-facing models, and restructured its API to use
+        modern practices. Streamlined continuous integration. Implemented the
+        collection and reporting of server health analytics. Worked with
+        third-party developers to add features to 3D Warehouse and integration
+        with other services.
+      </p>
+    </section>
+    <h3>Colorado State University, ENS, Fort Collins, CO <sup>Feb '13 &mdash; July '15</sup></h3>
+    <section>
+      <h4>Web Programmer</h4>
+      <p>
+        Built web tools to be used by students, faculty, and administrators in
+        the College of Engineering at Colorado State University. Developed
+        large-scale systems designed for external use and internal tools.
+        Created accounting application spanning multiple departments to help
+        staff understand and leverage budgets. Provided full support for systems
+        after deployment.
+      </p>
+    </section>
+    <h3>
+      Time Warner Cable, Broomfield, CO
+      <sup>Jun '13 &mdash; Aug '13</sup>
+    </h3>
+    <section>
+      <h4>Software Development Intern</h4>
+      <p>
+        Integrated third party streaming services on embedded-Linux based
+        experimental set-top-box. Independently created software to stream data
+        over home network from third party device. Coordinated development efforts
+        between three other interns during team project.
+      </p>
+    </section>
+  </div>
+
+  <div class="page">
+    <h2>Education</h2>
+    <h3>
+      Colorado State University, Fort Collins, CO
+      <sup>Aug '11 &mdash; May '15</sup>
+    </h3>
+    <section>
+      <h4>
+        Bachelor of Science: Computer Science, Minor: Business Administration
+        <sup>'15</sup>
+      </h4>
+      <p>
+        Wrote undergraduate thesis on distributed ray-tracing. Was lead
+        electrical and software engineer on a COSGC competitive robotics team
+        that created an Arduino rover capable of autonomously maneuvering over
+        a Mars-like landscape to an objective.
+      </p>
+    </section>
+    <h2>Personal Projects</h2>
+    <p>
+      <strong>Here's the really fun stuff!</strong>
+      <br>
+      I find that the best way to learn something new is to use it in a project.
+    </p>
+    <h3>
+      Online RPG Engine
+    </h3>
+    <section>
+      <p>
+        Built an online table top Role Playing Game web app to facilitate
+        remote or in-person games. Features include real-time multiplayer editing,
+        cloud based persistence, Google authentication, line of sight and shadow
+        map visualizations for game pieces, custom image import for map
+        backgrounds, and, most importantly, light vs dark mode! Frontend built
+        with TypeScript, Vue, Sass, and WebPack. Backend built with Rust and MongoDB
+        deployed to Google Cloud (managed with Terraform) and Kubernetes using
+        Bazel and Raze. Core engine built in Rust and compiled to Web Assembly
+        to be shared between clients and server. Used HTTP, Web Sockets,
+        and WebRTC to facilitate communication between servers, clients, and
+        peers.
+      </p>
+    </section>
+    <!--
+    <h3>
+      Graphics Engine
+    </h3>
+    <section>
+      <p>
+        Built a perspective-projection graphics engine before college and
+        improved it using techniques learned in school. Eventually reworked a
+        the rendering pipeline to support ray-tracing with distributed ray
+        tracing and UV mapping for diffuse, specular, and bump mapping.
+      </p>
+      <a href="https://github.com/wmmiii/raycer" class="always-emphasis">
+        https://github.com/wmmiii/raycer
+      </a>
+    </section>
+    -->
+    <h3>
+      glTF Renderer
+    </h3>
+    <section>
+      <p>
+        Experimented with WebGL and
+        <a href="https://www.khronos.org/gltf/">glTF</a> by building an
+        in-browser renderer for glTF models. Features physically based rendering
+        techniques, environmental illumination, and dynamically loaded models
+        and environments. Built with TypeScript and React.
+      </p>
+      <a href="https://github.com/wmmiii/glTF-Renderer" class="always-emphasis">
+        https://github.com/wmmiii/glTF-Renderer
+      </a>
+    </section>
+    <h3>
+      Vulkan & Bazel
+    </h3>
+    <section>
+      <p>
+        Learned two technologies with one project by implementing the
+        <a href="https://vulkan-tutorial.com/">Vulkan Tutorial</a> by
+        <a href="https://github.com/Overv">Alexander Overvoorde</a> using the
+        <a href="https://bazel.build/">Bazel</a> build system. The project was
+        initially written in C++ for Linux using the LunarG&copy; Vulkan&trade;
+        SDK. Used Travis CI for build verification.
+      </p>
+      <a href="https://github.com/wmmiii/vulkan-renderer" class="always-emphasis">
+        https://github.com/wmmiii/vulkan-renderer
+      </a>
+    </section>
+  </div>
+</body>
+<h2></h2>
+
+</html>

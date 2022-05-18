@@ -9,13 +9,16 @@ body {
 body {
   background-color: #444;
   box-sizing: border-box;
-  color: #000;
+  color: var(--col-text);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 11pt;
   height: 100%;
   width: 100%;
 
   --col-primary: #006891;
+  --col-text: #000;
+  --col-text-contrast: #fff;
+  --dim-page-padding: 0.5in;
 }
 
 a,
@@ -26,9 +29,8 @@ a:visited {
   text-decoration: none;
 }
 
-h1 {
-  border-bottom: 0.05in solid var(--col-primary);
-  display: inline;
+main {
+  padding: var(--dim-page-padding);
 }
 
 h1,
@@ -58,12 +60,27 @@ h3 {
 }
 
 header {
-  display: flex;
+  background-color: var(--col-primary);
+  color: var(--col-text-contrast);
+  display: inline-flex;
   flex-direction: row;
+  margin-top: 0.2in;
+  padding: 0.2in var(--dim-page-padding);
 }
 
-header h1 {
+header a,
+header a:active,
+header a:hover,
+header a:visited {
+  color: var(--col-text-contrast);
+}
+
+h1 {
+  align-self: center;
   flex: 1;
+  font-size: 24pt;
+  line-height: 24pt;
+  margin: 0;
 }
 
 p {
@@ -87,14 +104,7 @@ sup {
 
 .contact li {
   list-style: none;
-  padding: 0.2em 0;
-}
-
-a.always-emphasis,
-a.always-emphasis:active,
-a.always-emphasis:hover,
-a.always-emphasis:visited {
-  color: var(--col-primary);
+  padding: 0.4em 0;
 }
 
 .buzzwords {
@@ -128,7 +138,7 @@ a.always-emphasis:visited {
   max-width: 8.5in;
   margin: 1in auto;
   overflow: hidden;
-  padding: 0.5in;
+  padding: 0;
   page-break-after: always;
   width: 100%;
 }
@@ -184,7 +194,7 @@ a.always-emphasis:visited {
   a:active,
   a:hover,
   a:visited {
-    color: #000;
+    color: var(--col-text);
   }
 }
 

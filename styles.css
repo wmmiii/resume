@@ -40,6 +40,15 @@ h2 {
   margin: 0.2em 0 0.5em;
 }
 
+h1 {
+  align-self: center;
+  flex: 1;
+  font-size: 24pt;
+  line-height: 24pt;
+  margin: 0;
+  text-shadow: 0 0 0.2em var(--col-primary);
+}
+
 h2 {
   color: var(--col-primary);
 }
@@ -66,6 +75,16 @@ header {
   flex-direction: row;
   margin-top: 0.2in;
   padding: 0.2in var(--dim-page-padding);
+  position: relative;
+}
+
+header::after {
+  background: url("hex.svg");
+  content: " ";
+  height: 1000%;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-12deg);
+  width: 1000%;
 }
 
 header a,
@@ -73,14 +92,6 @@ header a:active,
 header a:hover,
 header a:visited {
   color: var(--col-text-contrast);
-}
-
-h1 {
-  align-self: center;
-  flex: 1;
-  font-size: 24pt;
-  line-height: 24pt;
-  margin: 0;
 }
 
 p {

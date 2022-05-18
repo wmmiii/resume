@@ -1,0 +1,191 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background-color: #444;
+  box-sizing: border-box;
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 11pt;
+  height: 100%;
+  width: 100%;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  color: #006891;
+  text-decoration: none;
+}
+
+h1 {
+  border-bottom: 0.05in solid #006891;
+  display: inline;
+}
+
+h1,
+h2 {
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: sans-serif;
+  margin: 0.2em 0 0.5em;
+}
+
+h2 {
+  color: #006891;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: sans-serif;
+  margin: 1em 0 0.5em;
+}
+
+h3 {
+  margin-top: 1em;
+  grid-column-end: span 2;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+header h1 {
+  flex: 1;
+}
+
+p {
+  margin: 0;
+}
+
+section {
+  padding: 0 0.5em;
+}
+
+sup {
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+.contact {
+  font-size: 10pt;
+  margin: 0;
+  padding-left: 3em;
+}
+
+.contact li {
+  list-style: none;
+  padding: 0.2em 0;
+}
+
+a.always-emphasis,
+a.always-emphasis:active,
+a.always-emphasis:hover,
+a.always-emphasis:visited {
+  color: #006891;
+}
+
+.buzzwords {
+  border-left: 0.03in solid #006891;
+  float: right;
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  list-style: none;
+  margin: 0 0 1em 1em;
+  padding: 0 0 0 1em;
+}
+
+.grid {
+  display: grid;
+  column-count: 2;
+}
+
+.icon {
+  height: 14pt;
+  padding-right: 0.5em;
+  vertical-align: middle;
+}
+
+.page {
+  background-color: #fff;
+  box-shadow: 0 0 0.25in #000;
+  box-sizing: border-box;
+  height: 11in;
+  max-width: 8.5in;
+  margin: 1in auto;
+  overflow: hidden;
+  padding: 0.5in;
+  page-break-after: always;
+  width: 100%;
+}
+
+@media screen and (max-width: 8.5in) {
+  header {
+    display: block;
+  }
+
+  .contact {
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  .page {
+    box-shadow: none;
+    height: unset;
+    margin: 0;
+    max-height: unset;
+    border-bottom: 2px solid #444;
+  }
+}
+
+@media print {
+  body {
+    padding: 0 !important;
+  }
+
+  body,
+  .page {
+    font-family: sans-serif;
+    height: 100% !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: 100% !important;
+  }
+
+  .page {
+    box-shadow: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .buzzwords {
+    font-family: 'sans-serif';
+  }
+
+  a,
+  a:active,
+  a:hover,
+  a:visited {
+    color: #000;
+  }
+}
+
+@page {
+  margin: 0 !important;
+}

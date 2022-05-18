@@ -19,6 +19,7 @@ body {
   --col-text: #000;
   --col-text-contrast: #fff;
   --dim-page-padding: 0.5in;
+  --dim-border-radius: 0.2rem;
 }
 
 a,
@@ -48,6 +49,8 @@ h1 {
 h2 {
   align-items: center;
   background-color: var(--col-primary);
+  border-bottom-right-radius: var(--dim-border-radius);
+  border-top-right-radius: var(--dim-border-radius);
   color: var(--col-text-contrast);
   display: inline-flex;
   flex-direction: row;
@@ -79,6 +82,8 @@ h3 svg {
 
 header {
   background-color: var(--col-primary);
+  border-bottom-right-radius: var(--dim-border-radius);
+  border-top-right-radius: var(--dim-border-radius);
   color: var(--col-text-contrast);
   display: inline-flex;
   flex-direction: row;
@@ -105,7 +110,7 @@ header a:visited {
   color: var(--col-text-contrast);
 }
 
-main > p {
+main>p {
   margin-top: 1em;
   padding: 0 var(--dim-page-padding);
 }
@@ -135,15 +140,28 @@ sup {
 }
 
 .buzzwords {
+  /* font-family: 'Titillium Web', sans-serif; */
   border-left: 0.03in solid var(--col-primary);
   float: right;
-  /* font-family: 'Titillium Web', sans-serif; */
   font-family: sans-serif;
   font-size: 10pt;
   font-weight: bold;
   list-style: none;
   margin: 1em var(--dim-page-padding) 1em 1em;
-  padding: 0 0 0 1em;
+  padding: 0;
+}
+
+.buzzwords li {
+  padding-left: 1em;
+}
+
+.buzzwords-header {
+  background-color: var(--col-primary);
+  border-bottom-right-radius: var(--dim-border-radius);
+  border-top-right-radius: var(--dim-border-radius);
+  color: var(--col-text-contrast);
+  margin-bottom: 0.4em;
+  padding: 0.4em;
 }
 
 .grid {

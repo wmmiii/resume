@@ -200,6 +200,7 @@ svg {
   max-width: 8.5in;
   overflow: hidden;
   padding: var(--dim-page-padding);
+  padding-top: calc(var(--dim-page-padding) * 0.6);
   page-break-after: always;
   width: 100%;
 }
@@ -271,6 +272,14 @@ svg {
   header {
     background-color: #fff;
     color: #000;
+    text-shadow: none;
+    border: 2px solid #000;
+    border-left: none;
+  }
+
+  header::after {
+    background: none;
+    content: " ";
   }
 
   h1,
@@ -283,11 +292,30 @@ svg {
     font-family: 'sans-serif';
   }
 
+  h2 {
+    border: 2px solid #000;
+    border-left: none;
+  }
+
   a,
   a:active,
   a:hover,
   a:visited {
     color: var(--col-text);
+  }
+
+  svg {
+    color: #000;
+  }
+
+
+  .buzzwords li.buzzwords-header {
+    border: 2px solid #000;
+    border-left: none;
+  }
+
+  .buzzwords li.buzzwords-header h2 {
+    border: none;
   }
 }
 

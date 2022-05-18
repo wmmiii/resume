@@ -28,6 +28,7 @@ a:hover,
 a:visited {
   color: var(--col-primary);
   text-decoration: none;
+  font-weight: 600;
 }
 
 h1,
@@ -150,6 +151,13 @@ svg {
   color: var(--col-text-contrast);
   margin-bottom: 0.4em;
   padding: 0.4em;
+}
+
+.buzzwords-header h2 {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .contact {

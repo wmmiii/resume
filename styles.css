@@ -14,18 +14,20 @@ body {
   font-size: 11pt;
   height: 100%;
   width: 100%;
+
+  --col-primary: #006891;
 }
 
 a,
 a:active,
 a:hover,
 a:visited {
-  color: #006891;
+  color: var(--col-primary);
   text-decoration: none;
 }
 
 h1 {
-  border-bottom: 0.05in solid #006891;
+  border-bottom: 0.05in solid var(--col-primary);
   display: inline;
 }
 
@@ -37,7 +39,7 @@ h2 {
 }
 
 h2 {
-  color: #006891;
+  color: var(--col-primary);
 }
 
 h3,
@@ -92,11 +94,11 @@ a.always-emphasis,
 a.always-emphasis:active,
 a.always-emphasis:hover,
 a.always-emphasis:visited {
-  color: #006891;
+  color: var(--col-primary);
 }
 
 .buzzwords {
-  border-left: 0.03in solid #006891;
+  border-left: 0.03in solid var(--col-primary);
   float: right;
   /* font-family: 'Titillium Web', sans-serif; */
   font-family: sans-serif;

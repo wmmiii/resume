@@ -10,7 +10,7 @@ body {
   background-color: #1f1e26;
   box-sizing: border-box;
   color: var(--col-text);
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Bitter', serif;
   font-size: 11pt;
   height: 100%;
   width: 100%;
@@ -31,9 +31,13 @@ a:visited {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   /* font-family: 'Titillium Web', sans-serif; */
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0.2em 0 0.5em;
 }
 
@@ -57,7 +61,9 @@ h2 {
   font-size: 18pt;
   gap: 4pt;
   line-height: 18pt;
-  margin: 1em 0 0 0;
+  margin: 1rem 0 0 0;
+  margin-top: 1rem;
+  margin-left: calc(var(--dim-page-padding) * -1);
   padding: 0.4em 0.6em 0.4em var(--dim-page-padding);
 }
 
@@ -67,7 +73,7 @@ h2 svg {
 }
 
 h3 {
-  padding: 0.2em 0.6em 0.2em var(--dim-page-padding);
+  padding: 0.2em 0.6em 0.2em 0;
   font-size: 14pt;
   grid-column-end: span 2;
   line-height: 14pt;
@@ -87,7 +93,7 @@ header {
   color: var(--col-text-contrast);
   display: inline-flex;
   flex-direction: row;
-  margin-top: 0.2in;
+  margin-left: calc(var(--dim-page-padding) * -1);
   overflow: hidden;
   padding: 0.2in var(--dim-page-padding);
   position: relative;
@@ -110,17 +116,12 @@ header a:visited {
   color: var(--col-text-contrast);
 }
 
-main>p {
+main>section>p {
   margin-top: 1em;
-  padding: 0 var(--dim-page-padding);
 }
 
 p {
   margin: 0;
-}
-
-section {
-  padding: 0 var(--dim-page-padding) 0.5em var(--dim-page-padding);
 }
 
 sup {
@@ -147,7 +148,8 @@ sup {
   font-size: 10pt;
   font-weight: bold;
   list-style: none;
-  margin: 1em var(--dim-page-padding) 1em 1em;
+  margin: 1rem;
+  margin-right: 0;
   padding: 0;
 }
 
@@ -180,10 +182,10 @@ sup {
   box-shadow: 0 0.1in 0.1in #000;
   box-sizing: border-box;
   height: 11in;
-  max-width: 8.5in;
   margin: 0.2in auto;
+  max-width: 8.5in;
   overflow: hidden;
-  padding: 0;
+  padding: var(--dim-page-padding);
   page-break-after: always;
   width: 100%;
 }

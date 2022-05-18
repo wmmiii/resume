@@ -10,7 +10,7 @@ body {
   background-color: #1f1e26;
   box-sizing: border-box;
   color: var(--col-text);
-  font-family: 'Bitter', serif;
+  font-family: 'Source Serif Pro', serif;
   font-size: 11pt;
   height: 100%;
   width: 100%;
@@ -36,9 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: 'Titillium Web', sans-serif; */
   font-family: 'Poppins', sans-serif;
-  margin: 0.2em 0 0.5em;
 }
 
 h1 {
@@ -86,6 +84,12 @@ h3 svg {
   vertical-align: middle;
 }
 
+h4 {
+  font-size: 12pt;
+  line-height: 12pt;
+  font-weight: 600;
+}
+
 header {
   background-color: var(--col-primary);
   border-bottom-right-radius: var(--dim-border-radius);
@@ -129,22 +133,10 @@ sup {
   white-space: nowrap;
 }
 
-.contact {
-  font-size: 10pt;
-  margin: 0;
-  padding-left: 3em;
-}
-
-.contact li {
-  list-style: none;
-  padding: 0.4em 0;
-}
-
 .buzzwords {
-  /* font-family: 'Titillium Web', sans-serif; */
   border-left: 0.03in solid var(--col-primary);
   float: right;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 10pt;
   font-weight: bold;
   list-style: none;
@@ -164,6 +156,26 @@ sup {
   color: var(--col-text-contrast);
   margin-bottom: 0.4em;
   padding: 0.4em;
+}
+
+.contact {
+  font-size: 10pt;
+  margin: 0;
+  padding-left: 3em;
+}
+
+.contact li {
+  list-style: none;
+  padding: 0.4em 0;
+}
+
+.dates {
+  font-family: 'Poppins', sans-serif;
+  font-size: 9pt;
+  font-weight: 300;
+  line-height: 9pt;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
 }
 
 .grid {

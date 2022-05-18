@@ -164,11 +164,11 @@ sup {
 
 .page {
   background-color: #fff;
-  box-shadow: 0 0 0.25in #000;
+  box-shadow: 0 0.1in 0.2in #000;
   box-sizing: border-box;
   height: 11in;
   max-width: 8.5in;
-  margin: 1in auto;
+  margin: 0.2in auto;
   overflow: hidden;
   padding: 0;
   page-break-after: always;

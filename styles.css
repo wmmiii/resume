@@ -45,7 +45,6 @@ h1 {
   font-size: 24pt;
   line-height: 24pt;
   margin: 0;
-  text-shadow: 0 0 0.2em var(--col-primary);
 }
 
 h2 {
@@ -65,24 +64,15 @@ h2 {
   padding: 0.4em 0.6em 0.4em var(--dim-page-padding);
 }
 
-h2 svg {
-  height: 18pt;
-  width: 18pt;
-}
 
 h3 {
   padding: 0.2em 0.6em 0.2em 0;
   font-size: 14pt;
   grid-column-end: span 2;
   line-height: 14pt;
-  margin-top: 1em;
+  margin-top: 1.2em;
 }
 
-h3 svg {
-  height: 14pt;
-  width: 14pt;
-  vertical-align: middle;
-}
 
 h4 {
   font-size: 12pt;
@@ -97,10 +87,13 @@ header {
   color: var(--col-text-contrast);
   display: inline-flex;
   flex-direction: row;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   margin-left: calc(var(--dim-page-padding) * -1);
   overflow: hidden;
   padding: 0.2in var(--dim-page-padding);
   position: relative;
+  text-shadow: 0 0 0.2em var(--col-primary);
 }
 
 header::after {
@@ -128,9 +121,10 @@ p {
   margin: 0;
 }
 
-sup {
-  word-break: keep-all;
-  white-space: nowrap;
+svg {
+  height: 1em;
+  vertical-align: middle;
+  width: 1em;
 }
 
 .buzzwords {

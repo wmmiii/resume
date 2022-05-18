@@ -11,11 +11,15 @@
   <link rel="stylesheet" href="styles.css">
   <base target="_blank" />
 
-  <svg style="display: none" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <svg aria-label="icon" style="display: none" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <defs>
       <g id="arrow">
         <path fill="currentColor"
           d="M9.71,6.29a1,1,0,0,0-1.42,0l-5,5a1,1,0,0,0,0,1.42l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L5.41,12l4.3-4.29A1,1,0,0,0,9.71,6.29Zm11,5-5-5a1,1,0,0,0-1.42,1.42L18.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5A1,1,0,0,0,20.71,11.29Z" />
+      </g>
+      <g id="bolt-alt">
+        <path fill="currentColor"
+          d="M19.89,9.55A1,1,0,0,0,19,9H14V3a1,1,0,0,0-.69-1,1,1,0,0,0-1.12.36l-8,11a1,1,0,0,0-.08,1A1,1,0,0,0,5,15h5v6a1,1,0,0,0,.69.95A1.12,1.12,0,0,0,11,22a1,1,0,0,0,.81-.41l8-11A1,1,0,0,0,19.89,9.55ZM12,17.92V14a1,1,0,0,0-1-1H7l5-6.92V10a1,1,0,0,0,1,1h4Z" />
       </g>
       <g id="csu">
         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -63,7 +67,7 @@
       <ul class="contact" aria-label="Contact">
         <li>
           <a href="https://www.linkedin.com/in/williammartin3rd/">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <svg aria-label="icon" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <use href="#linkedin" fill="currentColor" />
             </svg>
             https://www.linkedin.com/in/williammartin3rd/
@@ -71,7 +75,7 @@
         </li>
         <li>
           <a href="https://github.com/wmmiii">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <svg aria-label="icon" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <use href="#github" fill="currentColor" />
             </svg>
             https://github.com/wmmiii
@@ -82,14 +86,19 @@
 
     <main>
       <h2>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <svg aria-label="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <use href="#arrow" fill="currentColor" stroke="current-color" />
         </svg>
         Work Experience
       </h2>
 
       <ul class="buzzwords" aria-label="Buzzwords">
-        <li class="buzzwords-header" aria-hidden="true">Buzzwords</li>
+        <li class="buzzwords-header" aria-hidden="true">
+          <svg aria-label="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <use href="#bolt-alt" fill="currentColor" stroke="current-color" />
+          </svg>
+          Buzzwords
+        </li>
         <li>AWS</li>
         <li>Arduino</li>
         <li>Bazel</li>
@@ -118,7 +127,7 @@
 
       <section>
         <h3>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <svg aria-label="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <use href="#sketchup" fill="currentColor" stroke="current-color" />
           </svg>
           SketchUp (Trimble Inc.), Boulder, CO
@@ -166,7 +175,7 @@
         </section>
 
         <h3>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <svg aria-label="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <use href="#csu" fill="currentColor" stroke="current-color" />
           </svg>
           Colorado State University, ENS, Fort Collins, CO
@@ -211,7 +220,7 @@
     <main>
 
       <h2>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <svg aria-label="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <use href="#graduation-cap" fill="currentColor" stroke="current-color" />
         </svg>
         Education
@@ -220,7 +229,7 @@
       <section>
 
         <h3>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <svg aria-label="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <use href="#csu" fill="currentColor" stroke="current-color" />
           </svg>
           Colorado State University, Fort Collins, CO
@@ -243,7 +252,7 @@
       </section>
 
       <h2>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <svg aria-label="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <use href="#palette" fill="currentColor" stroke="current-color" />
         </svg>
         Personal Projects

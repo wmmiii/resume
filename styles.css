@@ -207,10 +207,23 @@ svg {
   margin: 0.2in auto;
   max-width: 8.5in;
   overflow: hidden;
-  padding: var(--dim-page-padding);
   padding-top: calc(var(--dim-page-padding) * 0.6);
+  padding: var(--dim-page-padding);
   page-break-after: always;
+  position: relative;
   width: 100%;
+}
+
+.stale-warning {
+  display: none;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  left: 0;
+  top: calc(var(--dim-page-padding) * 0.5);
+  left: var(--dim-page-padding);
+  z-index: 2;
+  font-size: 8pt;
 }
 
 @media screen and (max-width: 8.5in) {
@@ -252,10 +265,10 @@ svg {
 
   .page {
     box-shadow: none;
+    border-bottom: 2px solid #444;
     height: unset;
     margin: 0;
     max-height: unset;
-    border-bottom: 2px solid #444;
   }
 }
 
@@ -328,6 +341,10 @@ svg {
 
   .buzzwords li.buzzwords-header h2 {
     border: none;
+  }
+
+  .stale-warning {
+    display: block;
   }
 }
 

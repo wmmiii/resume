@@ -314,19 +314,18 @@ svg {
   h5,
   h6,
   .buzzwords {
+    color: var(--col-text);
     font-family: 'sans-serif';
   }
 
   h2 {
+    background-color: #fff;
     border: 2px solid #000;
     border-left: none;
   }
 
-  a,
-  a:active,
-  a:hover,
-  a:visited {
-    color: var(--col-text);
+  a {
+    color: var(--col-text) !important;
   }
 
   svg {
